@@ -1,0 +1,69 @@
+<html>
+
+<head>
+<meta charset = "urf-8">
+<title>高大資管系 晚會報名表單</title>
+<form action="result.php" method="post">
+</head>
+
+<body>
+<h3>NUKIM 晚會報名表單</h3>
+<hr/>
+姓名:
+<input type = "text" name = "sName" value = "" placeholder = "OOO">
+<br>
+年級:
+<select name = "sGrade" >
+<option value="大一">大一</option>
+<option value="大二">大二</option>
+<option value="大三">大三</option>
+<option value="大四">大四</option>
+</select>
+<br>
+學號:
+<input type = "text" name = "sNum" value = "" >
+<br>
+性別:
+<input type = "radio" name = "sGender" value = "男生">男生
+<input type = "radio" name = "sGender" value = "女生" checked>女生
+<br>
+學校Email: 
+<input type = "text" name = "sEmail" value = "" >
+<br>
+參加意願度:
+<input type="range" name="plea" min="0" max="5" >
+<br>
+是否參加:
+<input type = "radio" name = "sYN" value = "是" checked>是
+<input type = "radio" name = "sYN" value = "否" >否
+<br>
+衣服顏色：
+<input type="color" name="sColor" value="">
+選擇衣服大小：
+<select name="sSize">
+<option value="s">S</option>
+<option value="m">M</option>
+<option value="l">L</option>
+<option value="xl">XL</option>
+</select><br/>
+聯絡方式:
+<input type="radio" name="sCon" value="fb" checked>FB
+<input type="radio" name="sCon" value="ig">IG
+<input type="radio" name="sCon" value="line">LINE
+<input type="radio" name="sCon" value="phone">電話號碼
+<input type = "text" name = "sConn" value = "" >
+<br>
+活動建議(希望有什麼Part):<br>
+<textarea name = "sComm" value = "" rows = "5" cols = "80" 
+    placeholder = "能做到的我們會盡力完成 讓你們擁有美好難忘的晚會活動!">
+</textarea>
+
+
+<br>
+<br>
+<button type="submit">提交</button>
+<button type="reset">重填</button>
+</body>
+</form>
+
+</html>
