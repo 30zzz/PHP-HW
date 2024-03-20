@@ -1,0 +1,31 @@
+<title>您已提交表單</title>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $sName = $_POST["sName"];
+    $sGrade = $_POST["sGrade"];
+    $sNum = $_POST["sNum"];
+    $sGender = $_POST["sGender"];
+    $sEmail = $_POST["sEmail"];
+    $plea = $_POST["plea"];
+    $sYN = $_POST["sYN"];
+    $sColor = $_POST["sColor"];
+    $sSize = $_POST["sSize"];
+    $sCon = $_POST["sCon"];
+    $sConn = $_POST["sConn"];
+    $sComm = $_POST["sComm"];
+
+echo "您的姓名：" . $sName . "<br/>";
+echo "您的年級：" . $sGrade . "<br/>";
+echo "您的學號：" . $sNum . "<br/>";
+echo "您的性別：" . $sGender . "<br/>";
+echo "您的Email：" . $sEmail . "<br/>";
+echo "參加意願度：" . $plea . "<br/>";
+echo "是否參加：" . $sYN . "<br/>";
+echo "您選擇的衣服顏色：" . $sColor . "<br/>";
+echo "您選擇的衣服大小：" . $sSize . "<br/>";
+echo "您的聯絡方式：" . $sCon . "<br/>" . $sConn . "<br/>";
+
+echo "建議：" . $sComm . "<br/>";
+
+}
