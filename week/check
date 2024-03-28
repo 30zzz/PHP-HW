@@ -1,1 +1,17 @@
+<meta charset = "utf8">
+<?php
+session_start();
 
+$sid = "a1113371";
+$spass = "a1113371";
+
+$uid = $_GET["uid"];
+$upass = $_GET["upass"];
+
+if($sid == $uid && $spass == $upass){
+    $_SESSION["check"] = "YES";
+    header("Location:succ.php");
+}else{
+    header("Location:fail.php");
+}
+?>
